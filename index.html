@@ -1,5 +1,75 @@
 <html>
-    <body>Body here
-    !!!!</body>
+    <head>
+    <title>THE SOCIETY OF ASIAN SCIENTISTS AND ENGINEERS - ASU CHAPTER</title>
+    <link rel = "stylesheet" href="Stylesheet1.css">
+    <style>
+        </style>
+    </head>
+    <body>
+        <div id = "navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#discord">Discord</a></li>
+                <li><a href="#t_Member">Team members</a></li>
+            </ul>
+        </div>
+        <br>
+        <h1 id = "home">HOME PAGE here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p>        
+        <h1 id = "socials">Socials list</h1>
+        <div class="slide-container">
+            <div class="Image fade">
+                <img src="..\Elements/Images/Slideshow/img1.jpg" style = "width: 40%; padding-left: 450; padding-right: 450; background-color: black">
+            </div>
+            <div class="Image fade">
+                <img src="..\Elements/Images/Slideshow/SASE.jpg" style = "width: 40%; padding-left: 450; padding-right: 450; background-color: black">
+            </div>
+            <div class="Image fade">
+                <img src="..\Elements/Images/Slideshow/SKATE.jpg" style = "width: 40%; padding-left: 450; padding-right: 450; background-color: black">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p>
+        <p>Third slide</p>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("Image");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
+        
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navigation");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+</script>
+        
+    </body>
 </html>
