@@ -41,7 +41,7 @@ li a:hover{
 .social:hover .social1 {
   transform: rotateY(180deg);
 }
-.social1-outer, .social1-inner{
+.social1-outer, .social1{
   position: absolute;
   width: 100%;
   height: 100%;
