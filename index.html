@@ -19,7 +19,81 @@
         <h1 id = "home">HOME PAGE here</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p>        
         <h1 id = "socials">Socials list</h1>
+        <div class="carousel">
+          <button class='flt-left' onclick="slideRight(this);"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <div class="row flt-left">
+            
+           <div class="row-container">
+          <div class="container">
+            <img src="Elements/Images/Slideshow/img1.jpg" >
+          </div>
+          <div class="container">
+            <img src="Elements/Images/Slideshow/SASE.jpg" >
+          </div>
+          <div class="container">
+            <img src="Elements/Images/Slideshow/SKATE.jpg">
+          </div>
+              <div class="container">
+            <img src="Elements/Images/Slideshow/img1.jpg">
+          </div>
+             <div class="container">
+            <img src="Elements/Images/Slideshow/SASE.jpg">
+          </div>
+             <div class="container">
+            <img src="Elements/Images/Slideshow/SKATE.jpg">
+          </div>
+            <div class="clear"></div>
+            </div>
+           
+            </div>
+           <button class='flt-left'  onclick="slideLeft(this);"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <div class="clear"></div>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p>
         <p>Third slide</p>      
     </body>
+    <script>
+      var right = 0;
+      var maxMargin;
+      var jumpMargin = 150;
+
+      function setWidth(){
+        var boxwidth = document.querySelector(".container").offsetWidth;
+        var displaywidth = document.querySelector(".row").offsetWidth;
+        var displayheight = document.querySelector(".row").offsetHeight;
+        var children = document.querySelectorAll(".row-container > .container").length;
+        var outerboxwidth = children * boxwidth + (children*10);
+        document.querySelector(".row-container").style.width = outerboxwidth+"px";
+        document.querySelectorAll("button")[0].style.height = displayheight+"px";
+        document.querySelectorAll("button")[1].style.height = displayheight+"px";
+        maxMargin = outerboxwidth - displaywidth;
+      }
+
+      function slideLeft(event){
+        var rowcont = document.querySelector(".row-container");
+        if(right <= -maxMargin){
+          event.preventDefault();
+        }
+        else{
+          right -= jumpMargin;
+        }
+        rowcont.style.marginLeft = right+"px";
+      }
+
+      function slideRight(event){
+        var rowcont = document.querySelector(".row-container");
+        if(right==0){
+          event.preventDefault();
+        }
+        else if(right >= maxMargin){
+          event.preventDefault();
+        }
+        else{
+          right += jumpMargin;
+        }
+        rowcont.style.marginLeft = right+"px";
+      }
+
+      window.onload=setWidth;
+    </script>
 </html>
