@@ -2,7 +2,7 @@ body {
     background-color: darkblue;
     color: white;
 }
-ul{
+.navbar{
     list-style-type: none;
     margin: 0;
     padding: 0px;
@@ -23,41 +23,6 @@ li a:hover{
     background-color: aqua;
     color: black;   
 }
-/*
-.social{
-    background-color: transparent;
-    width: 300px;
-    height: auto;
-    border: 1px solid #101cc9;
-    perspective: 1000px;
-}
-.social1{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.social:hover .social1 {
-  transform: rotateY(180deg);
-}
-.social1-outer, .social1-inner{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.social1-outer {
-  background-color: #bbb;
-  color: black;
-}
-.social1-inner {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}*/
 .socials {
   background-color: transparent;
   width: 300px;
@@ -96,4 +61,130 @@ li a:hover{
   background-color: #b92929;
   color: white;
   transform: rotateY(180deg);
+}
+.socialss {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.social2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.socialss:hover .social2 {
+  transform: rotateY(180deg);
+}
+
+.social2front, .social2back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  backface-visibility: hidden;
+}
+
+.social2front {
+  background-color: #bbb;
+  color: black;
+}
+
+.social2back {
+  background-color: #b92929;
+  color: white;
+  transform: rotateY(180deg);
+}
+.socialsss {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.social3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.socialsss:hover .social3 {
+  transform: rotateY(180deg);
+}
+
+.social3front, .social3back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  backface-visibility: hidden;
+}
+
+.social3front {
+  background-color: #bbb;
+  color: black;
+}
+
+.social3back {
+  background-color: #b92929;
+  color: white;
+  transform: rotateY(180deg);
+}
+.socialssss {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.social4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.socialssss:hover .social4 {
+  transform: rotateY(180deg);
+}
+
+.social4front, .social4back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  backface-visibility: hidden;
+}
+
+.social4front {
+  background-color: #bbb;
+  color: black;
+}
+
+.social4back {
+  background-color: #b92929;
+  color: white;
+  transform: rotateY(180deg);
+}
+.sociallist{
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+.socia{
+  padding-right: 35px;
+  padding-left: 35px;
 }
