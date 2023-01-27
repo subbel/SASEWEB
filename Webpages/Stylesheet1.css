@@ -2,24 +2,24 @@ body {
     background-color: darkblue;
     color: white;
 }
-.navbar{
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0px;
     overflow : hidden;
     background-color: #102cc9;
 }
-.psst {
+li {
     float: left;
 }
-.psst .pssts {
+li a {
     display: block;
     padding: 10px;
     text-align: center;
     color: greenyellow;
     text-decoration: none;
 }
-.psst .pssts:hover{
+li a:hover{
     background-color: aqua;
     color: black;   
 }
