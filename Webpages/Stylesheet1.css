@@ -9,17 +9,17 @@ body {
     overflow : hidden;
     background-color: #102cc9;
 }
-li {
+.psst {
     float: left;
 }
-li a {
+.psst .pssts {
     display: block;
     padding: 10px;
     text-align: center;
     color: greenyellow;
     text-decoration: none;
 }
-li a:hover{
+.psst .pssts:hover{
     background-color: aqua;
     color: black;   
 }
@@ -181,10 +181,14 @@ li a:hover{
 .sociallist{
   list-style-type: none;
   margin: 0;
-  padding: 5px;
-  overflow: hidden;
+  padding: 0px;
+  overflow: hidden;;
 }
-.socia{
-  padding-right: 35px;
+.socia {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
   padding-left: 35px;
+  padding-right: 35px;
 }
