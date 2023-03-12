@@ -1,25 +1,115 @@
-body {
-    background-color: darkblue;
-    color: white;
+/*.topbar div{
+    display: inline-block;
+    margin-right: 20px;
 }
-.navbar{
+
+.nav-cnt{
+    display: inline-block;
     list-style-type: none;
     margin: 0;
-    padding: 0px;
-    overflow : hidden;
-    background-color: #102cc9;
+    padding: 0;
 }
-.psst {
-    float: left;
+
+.toprow{
+    font-family: "Roboto" !important;
+    letter-spacing: 4px !important;
+    font-size: 14px !important;
+    color: white;
 }
-.psst .pssts {
-    display: block;
+
+body{
+    background-color: black;
+}
+
+.topbar{
+    padding: 15px;
+}
+
+.navbar{
+    background-color: white;
+    color: black;
+    opacity: 0;
+    display: none;
+}
+
+.menu{
     padding: 10px;
+}
+
+.menu:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    width: max-content;
+}
+
+.menu:hover + .navbar{
+    opacity: 1;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.title{
+    position: absolute;
+    top: 2.55%;
+    left: 7%;
+}*/
+.body{
+    background-color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
     text-align: center;
-    color: greenyellow;
+    padding: 14px 16px;
     text-decoration: none;
-}
-.psst .pssts:hover{
-    background-color: aqua;
-    color: black;   
-}
+  }
+  
+  .dropdown div{
+    overflow: hidden;
+    float: left;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    color: white;
+    padding: 14px 16px;
+    background-color: transparent;
+    margin: 0;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: left;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: grey;
+  }
+  
+  .show {
+    display: block;
+  }

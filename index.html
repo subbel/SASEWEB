@@ -2,24 +2,52 @@
     <head>
     <title>THE SOCIETY OF ASIAN SCIENTISTS AND ENGINEERS - ASU CHAPTER</title>
     <link rel = "stylesheet" href="Webpages/Stylesheet1.css">
-    <style>
-        </style>
     </head>
     <body>
-        <div id = "navigation">
-            <ul class = "navbar">
-                <li class="psst"><a class="pssts"  href="#home">Home</a></li>
-                <li class="psst"><a class="pssts"  href="#socials">Socials</a></li>
-                <li class="psst"><a class="pssts"  href="#events">Events</a></li>
-                <li class="psst"><a class="pssts"  href="#discord">Discord</a></li>
-                <li class="psst"><a class="pssts"  href="#t_Member">Team members</a></li>
-            </ul>
+      <!--
+      <div class="toprow">
+        <div class="menu">MENU</div>
+        <div class="navbar">
+          <ul>
+            <li class="nav-cnt">HOME</li>
+            <li class="nav-cnt">ABOUT</li>
+            <li class="nav-cnt">E-BOARD</li>
+            <li class="nav-cnt">EVENTS</li>
+            <li class="nav-cnt">DONATE</li>
+            <li class="nav-cnt">MEETINGS</li>
+          </ul>
         </div>
-        <br>
-        <h1 id = "home">HOME PAGE here</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p>        
-        <h1 id = "socials">Socials list</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Arcu cursus vitae congue mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed. Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper a lacus vestibulum sed arcu non odio. Donec adipiscing tristique risus nec feugiat in. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Vulputate sapien nec sagittis aliquam. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Faucibus interdum posuere lorem ipsum. Enim nulla aliquet porttitor lacus luctus accumsan. Quisque egestas diam in arcu. Non quam lacus suspendisse faucibus interdum posuere. Mollis nunc sed id semper risus in hendrerit. Penatibus et magnis dis parturient montes nascetur ridiculus.</p>
-        <p>Third slide</p>      
+        <div class="title">THE SOCIETY OF ASIAN SCIENTISTS AND ENGINEERS - ASU CHAPTER</div>
+    </div>
+    -->
+    
+      <div class="navbar">
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">   MENU
+        </button>
+        THE SOCIETY OF ASIAN SCIENTISTS AND ENGINEERS - ASU CHAPTER
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div> 
+      </div>
+
+    <script>
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+    </script>
     </body>
 </html>
