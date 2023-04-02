@@ -54,6 +54,8 @@ body{
     top: 2.55%;
     left: 7%;
 }*/
+@import url('https://fonts.cdnfonts.com/css/aller');
+
 .body{
     background-color: black;
 }
@@ -112,4 +114,34 @@ body{
   
   .show {
     display: block;
+  }
+
+  .toprow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:url("../Elements/Images/img_1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .toprow-text{
+    font-family: "Aller", sans-serif ;
+    letter-spacing: 2px ;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 33%;
+  }
+  .main-start{
+    position: relative;
+    margin-top: 45%;
+  }
+
+  .main-start p{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
   }
