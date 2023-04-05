@@ -160,7 +160,7 @@ body{
   .img1{grid-row:1;grid-column: 3; height: fit-content;}
  
 .goal-column{
-  background-image:url("/Elements/Images/bottom_index_img.jpg");
+  background-image:url("../Elements/Images/bottom_index_img.jpg");
   height: 80%;
   background-size: cover;
   width: 101.55%;
