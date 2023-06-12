@@ -93,7 +93,7 @@ nav h2{
 
 header{
   width: 100%;
-  background-image: url("/Elements/Images/img_1.jpg");
+  background-image: url("./Elements/Images/img_1.jpg");
   background-size: cover;
   height: 100vh;
   display: flex;
