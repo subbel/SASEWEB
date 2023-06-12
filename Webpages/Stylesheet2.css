@@ -97,6 +97,39 @@
     background-size: cover;
     background-position: 10%;
   }
+
+  .top-row-heading{
+    text-align: center;
+    margin-top: 6%;
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .top-row-heading h3{
+    color:  #37b24d;
+  }
+
+  .sponsor-donor{
+    display: grid;
+    row-gap: 25px;
+    column-gap: 25px;
+    align-items: start;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .sponsor-one{grid-row: 1; grid-column: 1;}
+  .sponsor-two{grid-row: 1; grid-column: 2;}
+  .sponsor-three{grid-row: 2; grid-column: 1;text-align: center;}
+  .sponsor-four{grid-row: 2; grid-column: 2;text-align: center;}
+  /* .sponsor-donor-text{
+    margin-top: 2%;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  } */
   /* FOOTER */
    footer{
     display: flex;
