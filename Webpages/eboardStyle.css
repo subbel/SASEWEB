@@ -134,8 +134,10 @@
 
   .role-table div img:hover{
     position: relative;
-    opacity:0.5;
+    opacity: 0.2;
     z-index: -1;
+    transition-property: opacity;
+    transition-duration:350ms;
   }
 
   .img-grid{
