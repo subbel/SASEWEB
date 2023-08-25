@@ -88,10 +88,18 @@
 
   /* HEADER Content */
   header{
-    background-image: url("../Elements/Images/about/top_banner.jpg");
-    height: 30vh;
+    background-image: url("../Elements/Images/eboard/header.jpg");
+    height: 78vh;
     background-size:cover;
     background-position: 83% 17%;
+  }
+
+  header h1{
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: auto;
+    color: #d9e1e8;
+    font-size: 50;
   }
 
   .article-heading{
@@ -109,6 +117,25 @@
   .article-content p{
     font-size:20;
     padding-top: 2%;
+  }
+
+  .role-table{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .role-table div img{
+    height: 500px;
+  }
+
+  .role-table div img:hover{
+    position: relative;
+    opacity:0.5;
+    z-index: -1;
   }
 
   .img-grid{
