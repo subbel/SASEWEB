@@ -21,7 +21,7 @@ body {
 }
 .psst .pssts:hover{
     background-color: aqua;
-    color: black;   
+    color: black;
 }
 .socials {
   background-color: transparent;
@@ -48,7 +48,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  
+
   backface-visibility: hidden;
 }
 
@@ -87,7 +87,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  
+
   backface-visibility: hidden;
 }
 
@@ -126,7 +126,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  
+
   backface-visibility: hidden;
 }
 
@@ -164,7 +164,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  
+
   backface-visibility: hidden;
 }
 
