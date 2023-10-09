@@ -88,10 +88,17 @@
 
   /* HEADER Content */
   header{
-    background-image: url("../Elements/Images/about/top_banner.jpg");
-    height: 30vh;
+    background-image: url("../Elements/Images/Events/banner.jpeg");
+    height: 75vh;
     background-size:cover;
-    background-position: 83% 17%;
+    background-position: 45% 55%;
+    text-align: center;
+  }
+
+  .header-text{
+    font-size: 100px;
+    color: #d9e1e8;;
+    padding-top:20% ;
   }
 
   .article-heading{
@@ -123,6 +130,39 @@
     width: 40vw;
     margin-top: 4%;
   }
+  /* MEAT AND POTATOES */
+
+  .gallery-container{
+    margin-top: 5%  ;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row-one{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 25vw;
+  }
+
+  .row-two{
+    display: flex;
+    flex-direction: column;
+    gap:2%;
+    width: 25vw;
+  }
+  .row-three{
+    display: flex;
+    flex-direction: column;
+    gap:2%;
+    width: 25vw;
+  }
+
+
   /* FOOTER */
    footer{
     display: flex;

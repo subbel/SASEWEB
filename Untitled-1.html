@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        .flip{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .front .back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="flip">
+        <div class="front"><img src="Elements/Images/Slideshow/Randall_Park.jpg" style="width: 10vw; height: 40vh;"/></div>
+        <div class="back"><p>Treasurer<br> Kenta Taniguchi</p></div>
+    </div>
+</body>
+</html>
